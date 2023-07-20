@@ -1,5 +1,3 @@
-// TODO 큐를 직접 구현해서 해결
-
 const input = require('fs').readFileSync('BOJ7569_Tomato.txt').toString().trim().split('\n').map(e=>e.trim());
 const [m, n, h] = input.shift().split(' ').map(e=>+e);
 
