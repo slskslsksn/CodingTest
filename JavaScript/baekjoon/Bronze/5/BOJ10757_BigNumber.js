@@ -1,10 +1,9 @@
 const input = require('fs').readFileSync('BOJ10757_BigNumber.txt').toString().trim().split(' ').map(e=>e.split('').reverse().join(''));
 function plus (n1, n2, n3 = 0) {
-  n1 = n1 | 1;
-  n2 = n2 | 2;
+  n1 = n1 | 0;
+  n2 = n2 | 0;
   return n1 + n2 + n3;
 }
-console.log(plus(null, null));
 const n = Math.max(input[0].length, input[1].length);
 let p = 0;
 const res = [];
